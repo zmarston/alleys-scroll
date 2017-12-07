@@ -1,8 +1,22 @@
-.left, .top-left, .bottom-left {
-  background-color: lightyellow; }
+.border {
+  width: 50%; }
 
-.right, .top-right, .bottom-right {
-  background-color: tan; }
+.border-angle {
+  height: 100px;
+  position: fixed;
+  z-index: 999; }
+
+.border-side {
+  height: 100%;
+  float: left; }
+
+.bg-left {
+  background-color: #dddddd;
+  left: 0; }
+
+.bg-right {
+  background-color: #444444;
+  right: 0; }
 
 * {
   box-sizing: border-box;
@@ -15,47 +29,14 @@
   top: 0;
   z-index: -1; }
 
-.left {
-  float: left;
-  width: 50%;
-  height: 100%; }
-
 .top-left {
-  width: 50%;
-  height: 100px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 999; }
-
-.bottom-left {
-  width: 50%;
-  height: 100px;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  z-index: 999; }
-
-.right {
-  float: left;
-  width: 50%;
-  height: 100%; }
+  top: 0; }
 
 .top-right {
-  width: 50%;
-  height: 100px;
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 999; }
+  top: 0; }
 
-.bottom-right {
-  width: 50%;
-  height: 100px;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  z-index: 999; }
+.border-bottom {
+  bottom: 0; }
 
 body {
   display: flex;
@@ -93,7 +74,7 @@ body {
 .col-4:last-child {
   margin-top: 15%; }
 
-@media screen and (max-width: 900px) {
+@media (max-width: 900px) {
   .col-4 {
     width: 30%; }
 
@@ -106,7 +87,7 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap; } }
-@media screen and (max-width: 575px) {
+@media (max-width: 575px) {
   .col-4 {
     width: 70% !important;
     float: none;

@@ -1,10 +1,32 @@
-$bg-color1: lightyellow;
-$bg-color2: tan;
+$bg-color1: #dddddd;
+$bg-color2: #444444;
+$bg-width: 50%;
+$border-side-height: 100%;
+$border-angle-height: 100px;
+$border-side-align: 0;
 
-.left, .top-left, .bottom-left {
-  background-color: $bg-color1;
+
+.border {
+  width: $bg-width;
 }
 
-.right, .top-right, .bottom-right {
+.border-angle {
+  height: $border-angle-height;
+  position: fixed;
+  z-index: 999;
+}
+
+.border-side {
+  height: $border-side-height;
+  float: left;
+}
+
+.bg-left {
+  background-color: $bg-color1;
+  left: $border-side-align;
+}
+
+.bg-right {
   background-color: $bg-color2;
+  right: $border-side-align;
 }
