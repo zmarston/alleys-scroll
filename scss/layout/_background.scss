@@ -1,0 +1,10 @@
+$bg-color1: lightyellow;
+$bg-color2: tan;
+
+.left, .top-left, .bottom-left {
+  background-color: $bg-color1;
+}
+
+.right, .top-right, .bottom-right {
+  background-color: $bg-color2;
+}
