@@ -1,28 +1,47 @@
 .nav {
+  width: 10%;
   color: white;
   height: auto;
-  margin-bottom: 100px;
-  float: right;
+  float: left;
+  margin-top: 25vh;
+  padding-right: 8vw;
+  margin-left: 80%;
 }
+
+
 
 #myNavbar {
   z-index: 999;
 }
+li {
+  width: 1px;
+  color: #90fef8;
+}
+a {
+  color: #90fef8;
+}
 
-// @media (min-width: 768px)
-// {
-//     .navbar-header
-//     {
-//         float: none;
-//     }
-//
-//     .navbar-toggle
-//     {
-//         display: block;
-//     }
-//
-//     .navbar-collapse.collapse
-//     {
-//         display: none !important;
-//     }
-// }
+@media screen and (min-width: 1450px)
+{
+  .nav {
+    margin-left: 575px;
+  }
+
+
+}
+@media #{$mobile}{
+  .nav {
+    margin: 0;
+    margin-top: 30px;
+  }
+  #myNavbar {
+    margin-top: -65px;
+    margin-left: 55px;
+  }
+  li {
+    width: 100px !important;
+  }
+  #myNavbar br {
+    display: none;
+  }
+}
