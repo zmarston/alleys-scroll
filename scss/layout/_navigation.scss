@@ -1,3 +1,28 @@
 .nav {
-  height: 50px;
+  color: white;
+  height: auto;
+  margin-bottom: 100px;
+  float: right;
 }
+
+#myNavbar {
+  z-index: 999;
+}
+
+// @media (min-width: 768px)
+// {
+//     .navbar-header
+//     {
+//         float: none;
+//     }
+//
+//     .navbar-toggle
+//     {
+//         display: block;
+//     }
+//
+//     .navbar-collapse.collapse
+//     {
+//         display: none !important;
+//     }
+// }
