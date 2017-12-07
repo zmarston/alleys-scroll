@@ -2,6 +2,14 @@
   width: $bg-width;
 }
 
+.border-top {
+  top: $border-side-align;
+}
+
+.border-bottom {
+  bottom: $border-side-align;
+}
+
 .border-angle {
   height: $border-angle-height;
   position: fixed;
@@ -12,6 +20,15 @@
   height: $border-side-height;
   float: left;
 }
+
+.sides {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: $border-side-align;
+  z-index: -1;
+}
+
 
 .bg-left {
   background-color: $bg-color1;

@@ -1,6 +1,12 @@
 .border {
   width: 50%; }
 
+.border-top {
+  top: 0; }
+
+.border-bottom {
+  bottom: 0; }
+
 .border-angle {
   height: 100px;
   position: fixed;
@@ -10,6 +16,13 @@
   height: 100%;
   float: left; }
 
+.sides {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: -1; }
+
 .bg-left {
   background-color: #dddddd;
   left: 0; }
@@ -18,38 +31,22 @@
   background-color: #444444;
   right: 0; }
 
+.footer {
+  height: 100px; }
+
+.nav {
+  height: 50px; }
+
 * {
   box-sizing: border-box;
   /*border: 1px dashed grey;*/ }
-
-.sides {
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  z-index: -1; }
-
-.border-top {
-  top: 0; }
-
-.border-bottom {
-  bottom: 0; }
 
 body {
   display: flex;
   justify-content: center; }
 
-.nav {
-  height: 50px; }
-
-.header {
-  height: 200px; }
-
 .grid {
   height: 600px; }
-
-.footer {
-  height: 100px; }
 
 .container {
   background-color: white;
