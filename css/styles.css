@@ -29,10 +29,7 @@
   top: 0;
   z-index: -1; }
 
-.top-left {
-  top: 0; }
-
-.top-right {
+.border-top {
   top: 0; }
 
 .border-bottom {
